@@ -118,17 +118,29 @@ echo '<br><br>';
 //Créer un tableau pour les mois de l'année et affiché tous les mois de Janvier à Décembre
 //modifier et/ou remplacer les éléments ci-dessous
 echo "8.Les mois depuis le debut de l'annee : <br>";
-$mois = [];
-for ($i = 0; $i < 0; $i) {
-    echo '';
+$mois = ["janvier",
+        "février",
+        "mars",
+        "avril",
+        "mai",
+        "juin",
+        "juillet",
+        "août",
+        "septembre",
+        "octobre",
+        "novembre",
+        "décembre"];
+$mouth = count($mois);
+for ($i = 0; $i < $mouth; $i++) {
+    echo $mois[$i] . '<br>';
 }
 echo '<br><br>';
 
 //Afficher les mois de la fin de l'année jusqu'au début de l'année
 //modifier et/ou remplacer les éléments ci-dessous
 echo "9.Les mois depuis la fin de l'annee : <br>";
-for ($i = 0; $i < 0; $i) {
-    echo '';
+for ($i = $mouth - 1; $i >= 0; --$i) {
+    echo $mois[$i] . '<br>';
 }
 echo '<br><br>';
 
@@ -158,6 +170,19 @@ $college = array(
 
 echo '10.Les eleves du college : <br>';
 //ajoutez votre code ici
+$classe = count($college);
+
+
+
+/*
+      foreach ($college as $classe => $rank) {
+        echo "$classe <br>";
+        foreach ($rank as $Name => $value) {
+            echo "$Name.$value <br>";
+        }
+    }
+ */
+
 echo '<br><br>';
 
 //----------------------------------------

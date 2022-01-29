@@ -7,7 +7,7 @@
 $legumes = array('Salade', 'Asperge', 'Carotte');
 //déclaration de tableau méthode 2
 $fruits = ['Pomme', 'Cerise', 'Banane'];
-echo 'Legumes<br>';
+echo '$Legumes<br>';
 //La fonction print_r sert à afficher les tableaux (et objets) en profondeur. Pour un tableau, ça affichera
 //les index (aussi appelé "clé") et leur valuer.
 print_r($legumes);

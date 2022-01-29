@@ -14,6 +14,9 @@
      <ul>
        <?php
           // TODO Display the students here, each student inside a new <li> element
+       foreach ($students as $value) {
+           echo "<li> $value </li>";
+       }
        ?>
      </ul>
      <hr>
@@ -23,15 +26,27 @@
        <!-- Instructions : Créer la liste de jour (en chiffres), de mois (en chiffres) et d'année en PHP. -->
        <label for="day">Day</label>
        <select  name="day" id="day"><?php
-           // TODO list of day ?>
+           // TODO list of day
+           for($i = 1 ; $i <= 31 ; $i++){
+               echo "<option value='$i'>$i</option>";
+           }
+           ?>
        </select>
        <label for="month">Month</label>
        <select  name="month" id="month"><?php
-           // TODO list of month ?>
+           // TODO list of month
+           for($i = 1 ; $i <= 12 ; $i++){
+               echo "<option value='$i'>$i</option>";
+           }
+           ?>
        </select>
        <label for="year">Year</label>
        <select  name="year" id="year"><?php
-           // TODO list of year ?>
+           // TODO list of year
+           for($i = 1950 ; $i <= 2022 ; $i++){
+               echo "<option value='$i'>$i</option>";
+           }
+           ?>
        </select>
      </form>
      <hr>
